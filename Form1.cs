@@ -21,5 +21,24 @@ namespace pryMammanoSP2
         {
             btnReg.Enabled = true;
         }
+
+        private void btnReg_Click(object sender, EventArgs e)
+        {
+            
+            string fecha = dtpFecha.Text;
+            string nTicket = txtNumTick.Text;
+            string tipoTicket = cbTicket.Text;
+
+            lstTicket.Items.Add("Fecha: " + fecha +" Numero de Ticket: " ,nTicket +" Tipo de Ticket: " , tipoTicket);
+
+            dtpFecha.Text = null;
+            txtNumTick.Clear();
+            cbTicket.SelectedItem=null;
+
+            dtpFecha.Focus();
+
+
+            
+        }
     }
 }

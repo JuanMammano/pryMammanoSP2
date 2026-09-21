@@ -107,6 +107,7 @@
             // 
             cbTicket.Enabled = false;
             cbTicket.FormattingEnabled = true;
+            cbTicket.Items.AddRange(new object[] { "Opcion 1", "Opcion 2", "Opcion 3" });
             cbTicket.Location = new Point(151, 155);
             cbTicket.Name = "cbTicket";
             cbTicket.Size = new Size(111, 23);
@@ -123,6 +124,7 @@
             btnReg.TabIndex = 7;
             btnReg.Text = "REGISTRAR";
             btnReg.UseVisualStyleBackColor = true;
+            btnReg.Click += btnReg_Click;
             // 
             // lstTicket
             // 
